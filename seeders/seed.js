@@ -53,7 +53,8 @@ let workoutSeed = [
         type: 'cardio',
         name: 'Running',
         duration: 25,
-        distance: 4
+        distance: 4,
+        weight: 0
       }
     ]
   },
@@ -84,7 +85,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 4)),
+    day: new Date(new Date().setDate(new Date().getDate()-4)),
     exercises: [
       {
         type: 'resistance',
@@ -97,7 +98,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 3)),
+    day: new Date(new Date().setDate(new Date().getDate()-3)),
     exercises: [
       {
         type: 'resistance',
@@ -110,7 +111,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 2)),
+    day: new Date(new Date().setDate(new Date().getDate()-2)),
     exercises: [
       {
         type: 'resistance',
@@ -129,7 +130,7 @@ let workoutSeed = [
         type: "resistance",
         name: "Bench",
         duration: 20,
-        weight: 150,
+        weight: 300,
         reps: 10,
         sets: 4
       }
