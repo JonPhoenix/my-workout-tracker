@@ -1,12 +1,10 @@
 // Setting all dependencies
 const express = require('express');
 const mongoose = require('mongoose');
-const mongojs = require('mongojs');
 const logger = require('morgan');
-const path = require('path');
 
 // Setting up the port
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Setting up the Express app
 const app = express();
@@ -23,7 +21,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
   useFindAndModify: false
 });
 
-// Routes?
+// Importing routes with Express app
+require('./routes/apiRoutes.js')(app);
+require('./routes/htmlRoutes.js')(app);
 
 // Setting up the server listen
 app.listen(PORT, () => {
