@@ -84,7 +84,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate()-4)),
+    day: new Date(new Date().setDate(new Date().getDate() - 4)),
     exercises: [
       {
         type: 'resistance',
@@ -97,7 +97,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate()-3)),
+    day: new Date(new Date().setDate(new Date().getDate() - 3)),
     exercises: [
       {
         type: 'resistance',
@@ -110,7 +110,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate()-2)),
+    day: new Date(new Date().setDate(new Date().getDate() - 2)),
     exercises: [
       {
         type: 'resistance',
@@ -122,18 +122,19 @@ let workoutSeed = [
       }
     ]
   },
-  { // Additional Activity
+  {
     day: new Date().setDate(new Date().getDate()-1),
     exercises: [
       {
         type: "resistance",
         name: "Bench",
         duration: 20,
-        weight: 300,
+        weight: 150,
         reps: 10,
         sets: 4
       }
     ]
+  }
 ];
 
 db.Workout.deleteMany({})
