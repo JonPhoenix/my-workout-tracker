@@ -25,14 +25,14 @@ const workoutSchema = new Schema ({ // Creating a new schema object
     }
 });
 
-// Adds a virtual property to schema, this reduces the array of
-// exercises to the sum of their total duration.
+// Adds a virtual property to schema, this reduces the array
+// of exercises to the sum of their total duration.
 workoutSchema.virtual('totalDuration').get(function () {
     return this.exercises.reduce((total, exercise) => {
         return total + exercise.duration;
     }, 0);
 });
 
-const workout = mongoose.model('Workout', workoutSchema);
+const Workout = mongoose.model('Workout', workoutSchema);
 
 module.exports = Workout;
