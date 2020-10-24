@@ -19,6 +19,7 @@ const workoutSchema = new Schema ({ // Creating a new schema object
         }
     ]
 },
+
 {
     toJSON: { // Adds a virtual property not stored in Mongo
         virtuals: true
