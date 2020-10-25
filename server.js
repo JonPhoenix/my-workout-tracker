@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 // Setting up the Express app
 const app = express();
 
-// 
+// Morgan middleware logger using dev format
 app.use(logger('dev'));
 
 app.use(express.static('public')); 
