@@ -14,7 +14,7 @@
   - [License](#license)
 
   ## Project Description
-  The [**Workout Tracker**](https://jpx-workout-tracker.herokuapp.com/) app creates and tracks daily workouts, the user can log multiple resistance and cardio exercises. The app assists users to reach their fitness goals more quickly by tracking their workout progress and providing the relevant information of each exercise and workout.
+ [**My Workout Tracker**](https://jpx-workout-tracker.herokuapp.com/) app creates and tracks daily workouts, the user can log multiple resistance and cardio exercises. The app assists users to reach their fitness goals more quickly by tracking their workout progress and providing the relevant information of each exercise and workout.
 
   ## User Story
   - - -
